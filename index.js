@@ -39,5 +39,5 @@ document.querySelector(".inputs").addEventListener("input", (e) => {
     }
 })
 document.querySelector(".submit").addEventListener("click", () => {
-    location.reload();
+    window.location.reload();
 })

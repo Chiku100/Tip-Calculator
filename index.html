@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>SPLI <br> TTER</h1>
+    </header>
+    <div class="container">
+      <div class="box">
+        <form action="./app.js" name="inputs" class="inputs">
+          <label for="bill">Bill<input id="bill" name="bill" type="text" placeholder="0"></label>
+          <div class="solid"> <i class="fa-sharp fa-solid fa-dollar-sign"></i></div>
+          <label for="values">Select tip %</label>
+          <div class="percent" id="values">
+            <button class="based" id="five" value="5">5%</button>
+            <button class="based" id="ten" value="10">10%</button>
+            <button class="based" id="fifteen" value="15">15%</button>
+            <button class="based" id="twentyfive" value="25">25%</button>
+            <button class="based" id="fifty" value="50">50%</button>
+            <input class="based custom" id="enter" name="butnum" name="custom" placeholder="Custom"></input>
+          </div>
+          <div class="solid">
+            <p class="viz">Can't be zero</p>
+          </div>
+          <label for="count">Number of People<input name="people" id="count" class="count" placeholder="0"></input></label>
+          <div class="solid">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </form>
+      </div>
+      <div class="box2">
+        <form action="./index.js" class="total">
+          <div>
+            <div>
+              <p>Tip Amount</p>
+              <small>/ person</small>
+            </div>
+            <h2>&#36<span id="tip">0.00</span></h2>
+          </div>
+          <div>
+            <div>
+              <p>Total</p>
+              <small>/ person</small>
+            </div>
+            <h2>&#36<span id="total">0.00</span></h2>
+          </div>
+          <button class="submit" type="submit">RESET</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
